@@ -7,8 +7,8 @@ function Homepage(){
     }
     return(
         <div>
-            <h1>Hello Everyone</h1>
-            <button onClick={counter}>Go To Counter</button>
+            <h1>Hello Everyone Sameer Here</h1>
+            <button><b>Go To Login</b></button>
         </div>
     )
 }

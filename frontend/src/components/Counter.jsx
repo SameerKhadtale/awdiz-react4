@@ -7,7 +7,7 @@ function Update(){
 }
 return(
     <div>
-       <h1>Counter - {counter}</h1>
+       <h1>Counter</h1>
         <button onClick={Update}>+</button>
     </div>
 )
