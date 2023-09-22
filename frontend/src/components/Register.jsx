@@ -6,10 +6,18 @@
 //     )
 // }
 // export default Register
-export  const Register = ()=> {
+import { useState } from "react";
+
+const Register = ()=> {
+
+    const [counter, setCounter] = useState(0);
+    console.log(counter,"counter")
+
+
     return(
         <div>
-            Register
+            <h1>Register</h1>
         </div>
     )
 }
+export default Register;

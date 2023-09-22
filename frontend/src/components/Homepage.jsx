@@ -1,14 +1,22 @@
-import { useNavigate } from "react-router-dom";
+import {useNavigate} from "react-router-dom";
+
 
 function Homepage(){
+    const router=useNavigate();
+
+function routerToLogin(){
+
+}
     const route= useNavigate()
-    function counter(){
-        route('/counter')
+    function routerToLogin(){
+        route('/Login')
     }
     return(
         <div>
             <h1>Hello Everyone Sameer Here</h1>
-            <button><b>Go To Login</b></button>
+            {/* <a href="/Login">LoginPage Reload</a> */}
+            <button onClick={routerToLogin}><b>Login Page</b></button>
+            <button onClick={() =>router('/Register')}><b>Register Page</b></button>
         </div>
     )
 }

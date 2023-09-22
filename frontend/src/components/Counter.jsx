@@ -1,15 +1,17 @@
 import { useState } from "react"
 
-function Counter(){
-const [counter, setCounter]= useState(0)
-function Update(){
-    setCounter((prevValue) => prevValue+1)
+const Counter = () => {
+
+
+const [counter, setCounter]= useState(0);
+console.log(counter,"counter")
+// function Update(){
+    // setCounter((prevValue) => prevValue+1)
 }
 return(
     <div>
-       <h1>Counter</h1>
-        <button onClick={Update}>+</button>
+       <h1>Counter - {counter}</h1>
+        <button onClick={()=>setCounter(1)}>Add Counter</button>
     </div>
 )
-}
-export default Counter
+export default Counter;
