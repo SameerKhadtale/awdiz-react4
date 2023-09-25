@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react"
 
-const Effect1 = () => {
+const Effect2 = () => {
 
     const [counter, setCounter] = useState(0)
     useEffect(() => { 
-        alert("Rendered..") 
-    })
+        alert("Rendered 2nd time..") 
+    }, [])
 
     return (
         <div>
@@ -15,4 +15,4 @@ const Effect1 = () => {
     )
 }
 
-export default Effect1
+export default Effect2
