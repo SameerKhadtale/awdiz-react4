@@ -5,6 +5,7 @@ const Effect2 = () => {
     const [counter, setCounter] = useState(0)
     useEffect(() => { 
         alert("Rendered 2nd time..") 
+        // it'll execute nonly frst time page is loaded
     }, [])
 
     return (
