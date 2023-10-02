@@ -10,6 +10,7 @@ import Effect1 from './components/13-09/Effect1';
 import Effect2 from './components/13-09/Effect2';
 import Effect3 from './components/15-09/Effect3';
 import Effect4 from './components/15-09/Effect4';
+import Params from './components/15-09/Params';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route exact path='/effect2' element={<Effect2/>}/>
         <Route exact path='/effect3' element={<Effect3/>}/>
         <Route exact path='/effect4' element={<Effect4/>}/>
+        <Route exact path='/params' element={<Params/>}/>
 
         
       </Routes>
