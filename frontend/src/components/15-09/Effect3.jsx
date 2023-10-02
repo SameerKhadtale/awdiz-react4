@@ -7,7 +7,7 @@ const Effect3 = () => {
     useEffect(() => { 
         alert("Rendered") 
     }, [counter]);
-
+// single dependancy
     return (
         <div>
             <h1>Counter - {counter}</h1>

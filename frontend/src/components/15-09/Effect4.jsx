@@ -6,7 +6,7 @@ const Effect4 = () => {
     const [counter2, setCounter2] = useState(0)
     useEffect(() => { 
         alert("Rendered") 
-    }, [counter1, counter2]);
+    }, [counter1, counter2]); //multiple dependancy
 
     return (
         <div>
