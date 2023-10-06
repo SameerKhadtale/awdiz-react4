@@ -1,9 +1,13 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 
 const Params = () => {
+    const router=useNavigate();
 return (
 
-    <div><h1>Params</h1></div>
+<div>
+<button onClick={()=>router("/singleProduct/12345")}>Go to Single Product</button>
+</div>
 
 )
 }
