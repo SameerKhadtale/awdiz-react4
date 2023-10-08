@@ -28,6 +28,7 @@ const lenghtyCalculation= useMemo(() => calculate(counter),[counter]);
 }
 
 const calculate = (counter) => {
+    console.log("Calculating....")
     for (var i = 0; i < 10000000; i++) {
         counter += 1
     }
