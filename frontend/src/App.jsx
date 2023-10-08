@@ -11,6 +11,7 @@ import Effect3 from './components/15-09/Effect3';
 import Effect4 from './components/15-09/Effect4';
 import Params from './components/15-09/Params';
 import SingleProduct from './components/15-09/SingleProduct'
+import UseMemo from './components/6-10/UseMemo';
 
 function App() {
   return (
@@ -27,7 +28,7 @@ function App() {
         <Route exact path='/effect4' element={<Effect4/>}/>
         <Route exact path='/params' element={<Params/>}/>
         <Route exact path='/singleProoduct/id:' element={<SingleProduct/>}/>
-
+        <Route exact path='use-memo' element={<UseMemo/>}/>
         
       </Routes>
     </div>
