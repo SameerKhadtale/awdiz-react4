@@ -13,6 +13,7 @@ import Params from './components/15-09/Params';
 import SingleProduct from './components/15-09/SingleProduct'
 import UseMemo from './components/6-10/UseMemo';
 import UseCallback from './components/7-10/UseCallback';
+import Mapping from './components/16-09/Mapping';
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
         <Route exact path='/effect4' element={<Effect4/>}/>
         <Route exact path='/params' element={<Params/>}/>
         <Route exact path='/singleProoduct/id:' element={<SingleProduct/>}/>
+        <Route exact path='/mapping' element={<Mapping names={["Monday", "Tuesday", "Wednesday"]}/>}/>
         <Route exact path='use-memo' element={<UseMemo/>}/>
         <Route exact path='use-callback' element={<UseCallback/>}/>
         
