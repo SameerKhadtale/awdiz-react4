@@ -32,7 +32,7 @@ function App() {
         <Route exact path='/effect4' element={<Effect4/>}/>
         <Route exact path='/params' element={<Params/>}/>
         <Route exact path='/singleProoduct/id:' element={<SingleProduct/>}/>
-        <Route exact path='/mapping' element={<Mapping names={["Monday", "Tuesday", "Wednesday"]}/>}/>
+        <Route exact path='/mapping' element={<Mapping names={["Monday", "Tuesday", "Wednesday","Thursday","Friday","Saturday"]}/>}/>
         <Route exact path='use-memo' element={<UseMemo/>}/>
         <Route exact path='use-callback' element={<UseCallback/>}/>
         <Route exact path='use-reducer' element={<UseReducer/>}/>
