@@ -14,6 +14,8 @@ import SingleProduct from './components/15-09/SingleProduct'
 import UseMemo from './components/6-10/UseMemo';
 import UseCallback from './components/7-10/UseCallback';
 import Mapping from './components/16-09/Mapping';
+import UseReducer from './components/8-10/UseReducer';
+import TestReducer from './components/8-10/TestReducer';
 
 function App() {
   return (
@@ -33,6 +35,8 @@ function App() {
         <Route exact path='/mapping' element={<Mapping names={["Monday", "Tuesday", "Wednesday"]}/>}/>
         <Route exact path='use-memo' element={<UseMemo/>}/>
         <Route exact path='use-callback' element={<UseCallback/>}/>
+        <Route exact path='use-reducer' element={<UseReducer/>}/>
+        <Route exact path='test-reducer' element={<TestReducer/>}/>
         
       </Routes>
     </div>
