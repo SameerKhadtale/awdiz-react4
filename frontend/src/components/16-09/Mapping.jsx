@@ -12,8 +12,8 @@ const Mapping = ({ names }) => {
     //   </div>))} */}
 
 
-    {names.map((name) => (
-        <div>
+    {names.map((name, i) => (
+        <div> key {i}
           <h1>{name}</h1>
         </div>
       ))}

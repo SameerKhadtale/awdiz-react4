@@ -16,6 +16,7 @@ import UseCallback from './components/7-10/UseCallback';
 import Mapping from './components/16-09/Mapping';
 import UseReducer from './components/8-10/UseReducer';
 import TestReducer from './components/8-10/TestReducer';
+import Ternary from './components/16-09/Ternary';
 
 function App() {
   return (
@@ -32,12 +33,12 @@ function App() {
         <Route exact path='/effect4' element={<Effect4/>}/>
         <Route exact path='/params' element={<Params/>}/>
         <Route exact path='/singleProoduct/id:' element={<SingleProduct/>}/>
-        <Route exact path='/mapping' element={<Mapping names={["Monday", "Tuesday", "Wednesday","Thursday","Friday","Saturday"]}/>}/>
+        <Route exact path='/mapping' element={<Mapping names={["Monday", "Tuesday", "Wednesday","Thursday","Friday","Saturday","Saturday"]}/>}/>
         <Route exact path='use-memo' element={<UseMemo/>}/>
         <Route exact path='use-callback' element={<UseCallback/>}/>
         <Route exact path='use-reducer' element={<UseReducer/>}/>
         <Route exact path='test-reducer' element={<TestReducer/>}/>
-        
+        <Route exct path= 'ternary' element={<Ternary isUserLoggedIn={true}/>}/>
       </Routes>
     </div>
   );
