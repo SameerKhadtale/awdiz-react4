@@ -17,8 +17,11 @@ import Mapping from './components/16-09/Mapping';
 import UseReducer from './components/8-10/UseReducer';
 import TestReducer from './components/8-10/TestReducer';
 import Ternary from './components/16-09/Ternary';
+import { useState } from 'react';
+import StyledComponents from './components/16-09/StyledComponents';
 
 function App() {
+  const[loggedIn,setIsLoggedIn]=useState(false)
   return (
     <div className="App">
       <Routes>
@@ -38,7 +41,8 @@ function App() {
         <Route exact path='use-callback' element={<UseCallback/>}/>
         <Route exact path='use-reducer' element={<UseReducer/>}/>
         <Route exact path='test-reducer' element={<TestReducer/>}/>
-        <Route exct path= 'ternary' element={<Ternary isUserLoggedIn={true}/>}/>
+        <Route exct path= 'ternary' element={<Ternary isUserLoggedIn={loggedIn} setIsLoggedIn={setIsLoggedIn}/>}/>
+        <Route exact path= 'styled-components' element= {<StyledComponents/>}/>
       </Routes>
     </div>
   );
