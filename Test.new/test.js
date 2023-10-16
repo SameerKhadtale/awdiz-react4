@@ -70,20 +70,24 @@
 
 
 // // Q3
-// // Pallindrome
+// // // Pallindrome
 
-var emptarray = [];
-var num = 121;
-var reversenum = [];
+// var emptarray = [];
+// var num = 121;
+// var reversenum = [];
 
-for (var i=0;i < num.lenght; i++){
-    emptarray.push(num[i])
-    reversenum= reversenum+emptarray.pop()
+// for (var i=0;i < num.lenght; i++){
+//     emptarray.push(num[i])
+//     reversenum= reversenum+emptarray.pop()
 
-}
-if (reversenum = num){
-    console.log(reversenum,"Is Palindrome")
-}
-else{
-    console.log(reversenum,'Is not a Palindrome')
-}
+// }
+// if (reversenum = num){
+//     console.log(reversenum,"Is Palindrome")
+// }
+// else{
+//     console.log(reversenum,'Is not a Palindrome')
+// }
+
+
+
+
