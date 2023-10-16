@@ -19,6 +19,7 @@ import TestReducer from './components/8-10/TestReducer';
 import Ternary from './components/16-09/Ternary';
 import { useState } from 'react';
 import StyledComponents from './components/16-09/StyledComponents';
+import Counterse from './components/16-09/Counterse';
 
 function App() {
   const[loggedIn,setIsLoggedIn]=useState(false)
@@ -43,6 +44,7 @@ function App() {
         <Route exact path='test-reducer' element={<TestReducer/>}/>
         <Route exct path= 'ternary' element={<Ternary isUserLoggedIn={loggedIn} setIsLoggedIn={setIsLoggedIn}/>}/>
         <Route exact path= 'styled-components' element= {<StyledComponents/>}/>
+        <Route exact path= 'counterse' element= {<Counterse/>}/>
       </Routes>
     </div>
   );

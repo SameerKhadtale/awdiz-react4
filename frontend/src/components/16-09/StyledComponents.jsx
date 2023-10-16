@@ -4,7 +4,7 @@ import styled from 'styled-components'
 const StyledComponents = () => {
     const Button = styled.button`
     color : blue;
-    background-color : brown;
+    background-color : blue;
     `
   return (
     <div>
