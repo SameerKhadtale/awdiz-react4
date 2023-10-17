@@ -17,12 +17,12 @@ function routerToLogin(){
             {/* <a href="/Login">LoginPage Reload</a> */}
             <button onClick={routerToLogin}><b>Login Page</b></button>
             <button onClick={() =>router('/Register')}><b>Register Page</b></button><br></br>
-            <button><b>Profile</b></button>
-            <button><b>Counter</b></button><br></br>
-            <button><b>Effect 1</b></button>
-            <button><b>Effect 2</b></button>
-            <button><b>Effect 3</b></button>
-            <button><b>Effect 4</b></button>
+            <button onClick={()=>router('/Profile')}><b>Profile</b></button>
+            <button onClick={()=>router('/Counter')}><b>Counter</b></button><br></br>
+            <button onClick={()=>router('/Effect1')}><b>Effect 1</b></button>
+            <button onClick={()=>router('/Effect2')}><b>Effect 2</b></button>
+            <button onClick={()=>router('/Effect3')}><b>Effect 3</b></button>
+            <button onClick={()=>router('/Effect4')}><b>Effect 4</b></button>
         
         </div>
     )

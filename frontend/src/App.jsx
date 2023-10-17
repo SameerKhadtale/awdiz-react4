@@ -44,7 +44,7 @@ function App() {
         <Route exact path='test-reducer' element={<TestReducer/>}/>
         <Route exct path= 'ternary' element={<Ternary isUserLoggedIn={loggedIn} setIsLoggedIn={setIsLoggedIn}/>}/>
         <Route exact path= 'styled-components' element= {<StyledComponents/>}/>
-        <Route exact path= 'counterse' element= {<Counterse/>}/>
+        <Route exact path= 'y' element= {<Counterse/>}/>
       </Routes>
     </div>
   );

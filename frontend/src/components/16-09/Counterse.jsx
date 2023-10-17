@@ -11,11 +11,16 @@ const Counterse = () => {
 
 
     useEffect(()=>{
-        alert("")
-    })
+        // alert("Component Rendered..")
+        if (counter == 10){
+          alert("HII")
+        }
+    }, [counter])
   return (
     <div>
-        Counter - {counter}
+        <h1><b>Counter - {counter}</b></h1>
+        <button onClick={UpdateCounter}><b>+</b></button>
+        <butoon>Switch</butoon>
      </div>
   )
 }
