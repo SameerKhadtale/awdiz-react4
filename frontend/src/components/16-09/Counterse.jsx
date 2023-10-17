@@ -20,7 +20,7 @@ const Counterse = () => {
     <div>
         <h1><b>Counter - {counter}</b></h1>
         <button onClick={UpdateCounter}><b>+</b></button>
-        <butoon>Switch</butoon>
+        <button><b>Switch</b></button>
      </div>
   )
 }
