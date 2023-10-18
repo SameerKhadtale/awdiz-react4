@@ -1,0 +1,15 @@
+.Active-Button {
+    background-color: burlywood;
+    height: 60px;
+    width: 200px;
+    border: none;
+    color: gray;
+}
+
+.Inactive-Button {
+    background-color: green;
+    height: 60px;
+    width: 200px;
+    border: none;
+    color: gray;
+}
