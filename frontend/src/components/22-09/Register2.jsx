@@ -6,11 +6,12 @@ const Register2 = () => {
         <b>Register2</b>
         <form>
           <label>Name : </label><br></br>
-          <input></input><br></br>
+          <input type='name'></input><br></br>
           <label>E-mail : </label><br></br>
-          <input></input><br></br>
+          <input type='e-mail'></input><br></br>
           <label>Password : </label><br></br>
-          <input></input>
+          <input type='password'></input><br></br>
+          <input type='submit'></input>
         </form>
     </div>
   )
