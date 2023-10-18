@@ -21,6 +21,8 @@ import { useState } from 'react';
 import StyledComponents from './components/16-09/StyledComponents';
 import Counterse from './components/16-09/Counterse';
 import DynamicStyles from './components/20-09/DynamicStyles';
+import ChildrenProp from './components/22-09/ChildrenProp';
+import Register2 from './components/22-09/Register2';
 
 function App() {
   const[loggedIn,setIsLoggedIn]=useState(false)
@@ -47,6 +49,8 @@ function App() {
         <Route exact path= 'styled-components' element= {<StyledComponents/>}/>
         <Route exact path= 'counterse' element= {<Counterse/>}/>
         <Route exact path= 'dynamic-styles' element= {<DynamicStyles/>}/>
+        <Route exact path= 'children-prop' element= {<ChildrenProp/>}/>
+        <Route exact path= 'register2' element= {<Register2/>}/>
       </Routes>
     </div>
   );

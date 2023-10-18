@@ -4,12 +4,14 @@
     width: 200px;
     border: none;
     color: gray;
+    cursor : pointer;
 }
 
 .Inactive-Button {
-    background-color: green;
+    background-color: yellowgreen;
     height: 60px;
     width: 200px;
     border: none;
     color: gray;
+    cursor : pointer;
 }
