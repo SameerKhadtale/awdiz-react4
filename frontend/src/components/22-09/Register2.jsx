@@ -18,7 +18,7 @@ console.log(event.target.value)
           <input type='e-mail' onChange={handleChange}/><br/>
           <label>Password : </label><br></br>
           <input type='password' onChange={handleChange}/><br/>
-          <input type='submit'></input>
+          <input type='submit'/> 
         </form>
     </div>
   )
