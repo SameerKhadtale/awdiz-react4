@@ -14,12 +14,8 @@ switch (action.type){
     return{... state, count : 0}
     default : 
     return state; 
-
 }
-
 }
-
-
 const TestReducer = () => {
     
     const [state, dispatch]= useReducer(reducer, initialState);
