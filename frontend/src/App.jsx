@@ -23,12 +23,14 @@ import Counterse from './components/16-09/Counterse';
 import DynamicStyles from './components/20-09/DynamicStyles';
 import ChildrenProp from './components/22-09/ChildrenProp';
 import Register2 from './components/22-09/Register2';
+import CustomHooks from './components/13-10/CustomHooks';
+import CustomHooksLS from './components/13-10/CustomHooksLS';
 
 function App() {
   const[loggedIn,setIsLoggedIn]=useState(false)
   return (
     <div className="App">
-      <Routes>
+      <Routes/>
         <Route path='/' element={<Homepage/>}/>
         <Route exact path='/login' element={<Login/>}/>
         <Route exact path='/register' element={<Register/>}/>
@@ -41,17 +43,18 @@ function App() {
         <Route exact path='/params' element={<Params/>}/>
         <Route exact path='/singleProoduct/id:' element={<SingleProduct/>}/>
         <Route exact path='/mapping' element={<Mapping names={["Monday", "Tuesday", "Wednesday","Thursday","Friday","Saturday","Saturday"]}/>}/>
-        <Route exact path='use-memo' element={<UseMemo/>}/>
-        <Route exact path='use-callback' element={<UseCallback/>}/>
-        <Route exact path='use-reducer' element={<UseReducer/>}/>
-        <Route exact path='test-reducer' element={<TestReducer/>}/>
-        <Route exct path= 'ternary' element={<Ternary isUserLoggedIn={loggedIn} setIsLoggedIn={setIsLoggedIn}/>}/>
-        <Route exact path= 'styled-components' element= {<StyledComponents/>}/>
-        <Route exact path= 'counterse' element= {<Counterse/>}/>
-        <Route exact path= 'dynamic-styles' element= {<DynamicStyles/>}/>
-        <Route exact path= 'children-prop' element= {<ChildrenProp/>}/>
-        <Route exact path= 'register2' element= {<Register2/>}/>
-      </Routes>
+        <Route exact path='/use-memo' element={<UseMemo/>}/>
+        <Route exact path='/use-callback' element={<UseCallback/>}/>
+        <Route exact path='/use-reducer' element={<UseReducer/>}/>
+        <Route exact path='/test-reducer' element={<TestReducer/>}/>
+        <Route exct path= '/ternary' element={<Ternary isUserLoggedIn={loggedIn} setIsLoggedIn={setIsLoggedIn}/>}/>
+        <Route exact path= '/styled-components' element= {<StyledComponents/>}/>
+        <Route exact path= '/counterse' element= {<Counterse/>}/>
+        <Route exact path= '/dynamic-styles' element= {<DynamicStyles/>}/>
+        <Route exact path= '/children-prop' element= {<ChildrenProp/>}/>
+        <Route exact path= '/register2' element= {<Register2/>}/>
+        <Route exact path= '/custom-hook' element= {<CustomHooks/>}/>
+        <Route exact path= '/custom-hook-ls' element= {<CustomHooksLS/>}/>
     </div>
   );
 
