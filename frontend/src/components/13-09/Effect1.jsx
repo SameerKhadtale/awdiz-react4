@@ -4,7 +4,7 @@ const Effect1 = () => {
 
     const [counter, setCounter] = useState(0)
     useEffect(() => { 
-        alert("Rendered..") 
+        alert("Rendered.. it'll execute function on every render and render bcoz of 1st render, reload and state change") 
     })
 
     return (

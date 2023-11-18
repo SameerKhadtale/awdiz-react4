@@ -1,6 +1,5 @@
 import {createContext, useReducer} from 'react';
 
-
 export const MyContext = createContext();
 
 const reducer = (state, action) => {
@@ -15,7 +14,6 @@ const reducer = (state, action) => {
       return state;
 
     }
-
 }
 
 const GlobalContext = ({children}) => {

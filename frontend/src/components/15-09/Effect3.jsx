@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react"
 
 const Effect3 = () => {
 
-    const [counter, setCounter] = useState(0)
+    const [counter, setCounter] = useState(0);
     
     useEffect(() => { 
         alert("Rendered") 

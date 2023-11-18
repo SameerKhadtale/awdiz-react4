@@ -1,4 +1,5 @@
 import './App.css';
+import { useState } from 'react';
 import {Routes, Route} from 'react-router-dom';
 import Homepage from './components/Homepage';
 import Login from './components/Login';
@@ -17,7 +18,6 @@ import Mapping from './components/16-09/Mapping';
 import UseReducer from './components/8-10/UseReducer';
 import TestReducer from './components/8-10/TestReducer';
 import Ternary from './components/16-09/Ternary';
-import { useState } from 'react';
 import StyledComponents from './components/16-09/StyledComponents';
 import Counterse from './components/16-09/Counterse';
 import DynamicStyles from './components/20-09/DynamicStyles';
@@ -30,7 +30,7 @@ function App() {
   const[loggedIn,setIsLoggedIn]=useState(false)
   return (
     <div className="App">
-      <Routes/>
+      <Routes>
         <Route path='/' element={<Homepage/>}/>
         <Route exact path='/login' element={<Login/>}/>
         <Route exact path='/register' element={<Register/>}/>
@@ -55,6 +55,7 @@ function App() {
         <Route exact path= '/register2' element= {<Register2/>}/>
         <Route exact path= '/custom-hook' element= {<CustomHooks/>}/>
         <Route exact path= '/custom-hook-ls' element= {<CustomHooksLS/>}/>
+    </Routes>
     </div>
   );
 

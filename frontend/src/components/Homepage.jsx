@@ -25,7 +25,7 @@ function routerToLogin(){
             {/* <a href="/Login">LoginPage Reload</a> */}
             <button onClick={routerToLogin}><b>Login Page</b></button>
             <button onClick={() =>router('/Register')}><b>Register Page</b></button><br></br>
-            <button onClick={()=> toast.failure("Clicked")}>Click for toast failure</button>
+            <button onClick={()=> toast.error("Clicked")}>Click for toast error</button>
             <button onClick={()=> toast.success("Clicked")}>Click for toast success</button>
             
             
