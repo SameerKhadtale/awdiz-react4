@@ -1,8 +1,8 @@
 import { useState } from "react";
 
 
-const initialState = 0
-function useCounter(){
+// const initialState = 0
+function useCounter(initialState = 0){
     const[counter, setCounter] = useState(initialState) 
 
 function Increment(){
@@ -15,6 +15,6 @@ function Reset(){
 setCounter(0)
 }
     
-return [counter, Increment, Decrement]
+return [counter, Increment, Decrement, Reset]
 }
 export default useCounter;

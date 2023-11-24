@@ -19,14 +19,14 @@ function routerToLogin(){
         <div>
             <h1>Hello Everyone Sameer Here</h1>
             <h1>Counter : {state.counter}</h1>
-            <button onClick={()=>dispatch({type: "INCREMENT"})}><b>+</b></button>
-            <button onClick={()=>dispatch({type: "DECREMENT"})}><b>-</b></button>
-            <button onClick={()=>dispatch({type: "RESET"})}><b>Reset</b></button>
+            <button onClick={()=>dispatch({type: "INCREMENT"})}><b> UP +</b></button>
+            <button onClick={()=>dispatch({type: "DECREMENT"})}><b> DOWN -</b></button>
+            <button onClick={()=>dispatch({type: "RESET"})}><b>Reset</b></button><br/>
             {/* <a href="/Login">LoginPage Reload</a> */}
             <button onClick={routerToLogin}><b>Login Page</b></button>
             <button onClick={() =>router('/Register')}><b>Register Page</b></button><br></br>
-            <button onClick={()=> toast.error("Clicked")}>Click for toast error</button>
-            <button onClick={()=> toast.success("Clicked")}>Click for toast success</button>
+            <button onClick={()=> toast.error("Clicked")}><b>Click for toast error</b></button>
+            <button onClick={()=> toast.success("Clicked")}><b>Click for toast success</b></button>
             
             
             
