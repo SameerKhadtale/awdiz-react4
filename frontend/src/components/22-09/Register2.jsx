@@ -1,4 +1,8 @@
 import React, { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
+import toast from 'react-hot-toast'
+
+
 
 const Register2 = () => {
 
@@ -10,15 +14,15 @@ console.log(event.target.value)
   }
   return (
     <div>
-        <b>Register2</b>
-        <form>
-          <label>Name : </label><br></br>
-          <input type='text' onChange={handleChange}/><br/>
+        <b>Register</b>
+        <form onSubmit={sendDataToBackend}>
+          <label>Name : </label><br/>
+          <input name='name' type='text' onChange={handleChange}/><br/>
           <label>E-mail : </label><br></br>
-          <input type='e-mail' onChange={handleChange}/><br/>
+          <input name='e-mail' type='e-mail' onChange={handleChange}/><br/>
           <label>Password : </label><br></br>
-          <input type='password' onChange={handleChange}/><br/>
-          <input type='submit'/> 
+          <input name='password' type='password' onChange={handleChange}/><br/>
+          <input type='submit' value="Register here"/><br/> 
         </form>
     </div>
   )
