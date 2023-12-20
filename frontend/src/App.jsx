@@ -25,12 +25,15 @@ import ChildrenProp from './components/22-09/ChildrenProp';
 import Register2 from './components/22-09/Register2';
 import CustomHooks from './components/13-10/CustomHooks';
 import CustomHooksLS from './components/13-10/CustomHooksLS';
+import { ClassComponent } from './components/29-09/ClassComponent';
+import PageNotFound from './components/29-09/PageNotFound';
 
 function App() {
   const[loggedIn,setIsLoggedIn]=useState(false)
   return (
     <div className="App">
       <Routes>
+        <Route path = '*' element={<PageNotFound/>}/>
         <Route path='/' element={<Homepage/>}/>
         <Route exact path='/login' element={<Login/>}/>
         <Route exact path='/register' element={<Register/>}/>
@@ -55,6 +58,7 @@ function App() {
         <Route exact path= '/register2' element= {<Register2/>}/>
         <Route exact path= '/custom-hook' element= {<CustomHooks/>}/>
         <Route exact path= '/custom-hook-ls' element= {<CustomHooksLS/>}/>
+        <Route exact path= '/class-component' element= {<ClassComponent/>}/>
     </Routes>
     </div>
   );

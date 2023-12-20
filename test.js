@@ -3,7 +3,7 @@
 // var myNumber = 5;
 // console.log(myNumber)
 
-function Person(name, age, number){
+function person(name, age, number){
 console.log(name, age, number)
 }
 
@@ -13,9 +13,12 @@ class Person{
         this.age = age;
     }
     sayHello(){
-        console.log(`Hello my name is ${this.name}`);
+        console.log(`Hello my name is ${this.name} and i'm ${this.age} years old`);
     }
     myAge(){
-        console.log(`Hello my age is ${this.age}`)
+        console.log(`My age is ${this.age}`)
     }
 }
+const john = new Person('John',30);
+john.sayHello();
+john.myAge();
