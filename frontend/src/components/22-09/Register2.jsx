@@ -19,11 +19,20 @@ alert("Data submitted to backend..")
   if(userData.name && userData.email && userData.password) {
 if (userData.passowrd.length >=8) {
 try{
-
-}catch{
-  
+const response = await api.post("/auth/register",{userData});
+//const response = {data :{success : true}};
+if(response.data.success) {
+toast.success("Registration Successful..")
+setUserData({ name : "", email : "", password : ""})
+router("/login")
+}else{
+throw new Error("Somethingg went wrong..")
 }
+}catch(error){
+toast.error(error?.message)
+console.log(error, "error here")
 }
+} else{}
   }
 }
   
