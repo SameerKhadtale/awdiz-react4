@@ -27,6 +27,7 @@ import CustomHooks from './components/13-10/CustomHooks';
 import CustomHooksLS from './components/13-10/CustomHooksLS';
 import { ClassComponent } from './components/29-09/ClassComponent';
 import PageNotFound from './components/29-09/PageNotFound';
+import Products from './components/30-09/Products';
 
 function App() {
   const[loggedIn,setIsLoggedIn]=useState(false)
@@ -59,6 +60,7 @@ function App() {
         <Route exact path= '/custom-hook' element= {<CustomHooks/>}/>
         <Route exact path= '/custom-hook-ls' element= {<CustomHooksLS/>}/>
         <Route exact path= '/class-component' element= {<ClassComponent/>}/>
+        <Route exact path= '/products' element= {<Products/>}/>
     </Routes>
     </div>
   );

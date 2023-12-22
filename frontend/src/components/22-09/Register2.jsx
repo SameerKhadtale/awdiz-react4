@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import toast from 'react-hot-toast';
-import api from '../../helpers/AxiosConfig';
+import api from '../helpers/AxiosConfig';
 
 const Register2 = () => {
 const[userData,setUserData]= useState({name :"",email : "",passowrd : ""});
@@ -28,14 +28,17 @@ router("/login")
 }else{
 throw new Error("Somethingg went wrong..")
 }
-}catch(error){
-toast.error(error?.message)
-console.log(error, "error here")
+ } catch(error){
+    toast.error(error?.message)
+    console.log(error, "error here")
 }
-} else{}
+} else{
+  alert("Password must be 8 digits..")
+  }
+} else {
+  alert("All fields are mandatory..")
   }
 }
-  
   
   return (
     <div>
