@@ -1,37 +1,44 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 import toast from 'react-hot-toast';
+import { useNavigate } from 'react-router-dom';
+import api from '../helpers/AxiosConfig';
 
 const Products = () => {
-const [products, setProducts] = useState([]);
-useEffect (()=>{
-// toast.success("Page rendered on browser..")
- async function getProducts(){
-    try{
-        const {data} = await axios.get('https://fakestoreapi.com/products');
+  const router = useNavigate();
+  const [products, setProducts] = useState([]);
+  console.log(products)
+  useEffect(() => {
+    // toast.success("Page rendered on browser..")
+    async function getProducts() {
+      try {
+        const { data } = await axios.get('https://fakestoreapi.com/products');
         // console.log(data, "data here")
         setProducts(data)
-    }
-    catch(error){
+      }
+      catch (error) {
         toast.error(error.message)
-    }
-    
-}
-getProducts()
-}, [])
+      }
 
+    }
+    getProducts()
+  }, [])
   return (
-    <div>
-        {products?.length ? 
-        <div style={{display : "flex", flexWrap : "wrap", justifyContent : "space-around"}}>{products.map((pro)=>(
-        <div style={{width : "23%", height : "750px ", border : "1px solid black", marginBottom: "50px"}}>
-            <img style={{width : "100%", height : "500px "}} src={pro.image} />
-            <h1>NAME : {pro.title}</h1>
-            <h1>PRICE : {pro.price}$</h1>
-            <button>Add to Cart</button>
+    <div>{products?.length ? <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "space-around" }}>
+        {products.map((pro) => (
+            <div onClick={() => router(`/single-product/${pro._id}`)} style={{ border: "1px solid black", width: "23%", height: "550px", marginBottom: "10px" }}>
+                <img alt='...' style={{ width: "80%", height: "300px" }} src={pro.image} />
+                <h1>Name :{pro.name}</h1>
+                <h3>Price : {pro.price} $</h3>
+                <h2>Category : {pro.category}</h2>
+                <button>View</button>
             </div>
-    ))}
-    </div> : <div>Loading...</div>}</div>
+        ))}
+
+    </div> : <div>Loading...</div>
+}
+    
+    </div >
   ) 
 }
 
