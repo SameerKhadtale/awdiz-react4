@@ -62,7 +62,7 @@ function App() {
         <Route exact path= '/custom-hook-ls' element= {<CustomHooksLS/>}/>
         <Route exact path= '/class-component' element= {<ClassComponent/>}/>
         <Route exact path= '/products' element= {<Products/>}/>
-        <Route exact path= '/products/:id' element= {<SingleProductNew/>}/>
+        <Route exact path= '/single-product/:id' element= {<SingleProductNew/>}/>
     </Routes>
     </div>
   );
