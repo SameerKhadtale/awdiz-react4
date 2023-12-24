@@ -29,6 +29,7 @@ import { ClassComponent } from './components/29-09/ClassComponent';
 import PageNotFound from './components/29-09/PageNotFound';
 import Products from './components/30-09/Products';
 import SingleProductNew from './components/1-10/SingleProductNew';
+import AddProduct from './components/04-10/AddProduct';
 
 function App() {
   const[loggedIn,setIsLoggedIn]=useState(false)
@@ -63,6 +64,7 @@ function App() {
         <Route exact path= '/class-component' element= {<ClassComponent/>}/>
         <Route exact path= '/products' element= {<Products/>}/>
         <Route exact path= '/single-product/:id' element= {<SingleProductNew/>}/>
+        <Route exact path= '/add-product' element= {<AddProduct/>}/>
     </Routes>
     </div>
   );
