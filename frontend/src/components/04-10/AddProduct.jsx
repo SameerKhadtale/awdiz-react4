@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import toast from 'react-hot-toast';
+import axios from 'axios';
 
 const AddProduct = () => {
     const[productData, setProductData] = useState({name : "", price : "", image : ""});
@@ -8,15 +9,20 @@ const AddProduct = () => {
 setProductData({...productData, [event.target.name] : event.target.value})
 // console.log(productData, "productData")
   }
-const handleSubmit = (event)=> {
+const handleSubmit = async (event)=> {
 event.preventDefault();
 if(productData.name && productData.price && productData.image && productData.price > 0){
-
-}else{
-    toast.error("All fields are mandatory")
+try{
+  const response = await axios.post("/https://fakestoreapi.com/products",{title: productData.name, price: productData.price, image: productData.image})
+console.log(response, "response from post request")
+toast.success(response.id)
 }
-
-
+catch(error){
+  console.log(error)
+}
+}else{
+    toast.error("All fields are mandatory and pricemust be greater than 0..")
+}
 }
   
     return (
