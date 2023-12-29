@@ -86,9 +86,10 @@ const handleSubmit = async (event)=> {
 event.preventDefault();
 if(productData.name && productData.price && productData.image && productData.price > 0){
 try{
-  const response = await axios.post("/https://fakestoreapi.com/products",{title: productData.name, price: productData.price, image: productData.image})
+  const response = await axios.post("https://fakestoreapi.com/products",{title: productData.name, price: productData.price, image: productData.image})
 console.log(response, "response from post request")
-toast.success(response.id)
+toast.success(response.data.id)
+setProductData({name : "", price : "", image : ""})
 }
 catch(error){
   console.log(error)
