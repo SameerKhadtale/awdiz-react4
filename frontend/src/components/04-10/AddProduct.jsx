@@ -88,7 +88,7 @@ if(productData.name && productData.price && productData.image && productData.pri
 try{
   const response = await axios.post("https://fakestoreapi.com/products",{title: productData.name, price: productData.price, image: productData.image})
 console.log(response, "response from post request")
-toast.success(response.data.id)
+toast.success("Product Added Successfully")
 setProductData({name : "", price : "", image : ""})
 }
 catch(error){
@@ -104,11 +104,11 @@ catch(error){
         <h1>AddProduct</h1>
         <form onSubmit={handleSubmit}>
             <label>Product Name</label><br/>
-            <input type='text' name="name" onChange={handleChange}/><br/>
+            <input type='text' name="name" onChange={handleChange} value={productData.name}/><br/>
             <label>Product Price</label><br/>
-            <input type='number' name="price" onChange={handleChange}/><br/>
+            <input type='number' name="price" onChange={handleChange}  value={productData.price}/><br/>
             <label>Product Image</label><br/>
-            <input type='url' name="image" onChange={handleChange}/><br/>
+            <input type='url' name="image" onChange={handleChange}  value={productData.image}/><br/>
             <input type='submit'/><br/>
         </form>
     </div>
