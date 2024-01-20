@@ -1,5 +1,5 @@
 import { createContext, useEffect, useReducer } from "react";
-import api from "../../helpers/AxiosConfig.js";
+import api from "./../helpers/AxiosConfig.js"
 import toast from "react-hot-toast";
 
 export const AuthContext = createContext();

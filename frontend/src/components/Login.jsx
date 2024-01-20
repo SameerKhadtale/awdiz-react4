@@ -2,7 +2,7 @@ import { useNavigate } from 'react-router-dom';
 import api from '../components/helpers/AxiosConfig.js';
 import { useContext, useState } from 'react';
 import toast from 'react-hot-toast';
-import { AuthContext } from '../components/Context/AuthContext.js';
+import {AuthContext} from './Context/AuthContext';
 
 
 function Login() {
