@@ -7,7 +7,7 @@ import { MyContext } from "./Context/GlobalContext.js";
 function Homepage(){
     const {state,dispatch} = useContext(MyContext);
     const router=useNavigate();
-
+}
 function routerToLogin(){
 
 }
@@ -30,8 +30,7 @@ function routerToLogin(){
             
             
             
-            
-            
+           
             
             
             
@@ -50,5 +49,5 @@ function routerToLogin(){
         
         </div>
     )
-}
+
 export default Homepage
