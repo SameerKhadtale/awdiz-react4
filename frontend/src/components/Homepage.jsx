@@ -29,18 +29,9 @@ function Homepage(){
             <button onClick={() =>router('/register')}><b>Register Page</b></button><br></br>
             <button onClick={()=> toast.error("Clicked")}><b>Click for toast error</b></button>
             <button onClick={()=> toast.success("Clicked")}><b>Click for toast success</b></button>
-            
-            
-
-            {/* <button onClick={()=>router('/Profile')}><b>Profile</b></button>
-            <button onClick={()=>router('/Counter')}><b>Counter</b></button><br></br>
-            <button onClick={()=>router('/Effect1')}><b>Effect 1</b></button>
-            <button onClick={()=>router('/Effect2')}><b>Effect 2</b></button>
-            <button onClick={()=>router('/Effect3')}><b>Effect 3</b></button>
-            <button onClick={()=>router('/Effect4')}><b>Effect 4</b></button>
-             */}
+            <button onClick={Logout}><b>Logout ?</b></button>
         
-        </div>)
-    
+        </div>
+        )
 }
 export default Homepage;
