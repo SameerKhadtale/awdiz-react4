@@ -65,6 +65,7 @@ function App() {
         <Route exact path= '/products' element= {<Products/>}/>
         <Route exact path= '/single-product/:id' element= {<SingleProductNew/>}/>
         <Route exact path= '/add-product' element= {<AddProduct/>}/>
+        <Route exact path= '/your-product' element= {<YourProduct/>}/>
     </Routes>
     </div>
   );

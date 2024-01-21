@@ -18,7 +18,7 @@ const reducer = (state, action) => {
 
 const GlobalContext = ({children}) => {
 
-    const initialState = {counter : 0};
+    const initialState = {counter : 6969};
 
     const [state, dispatch]= useReducer(reducer, initialState)
     return(

@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
 import { Toaster } from 'react-hot-toast';
 import GlobalContext from './components/Context/GlobalContext';
+import ParentAuthContext, { AuthContext } from './components/Context/AuthContext';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -38,12 +39,13 @@ root.render(
         }}
       />
      
-
-   <GlobalContext>
+<ParentAuthContext>
+<GlobalContext>
    <App/>
    </GlobalContext>
+</ParentAuthContext>
+   
    </BrowserRouter>
-    
   </React.StrictMode>
 );
 
