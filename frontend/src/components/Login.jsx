@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom';
-import api from '../components/helpers/AxiosConfig.js';
+import api from './helpers/AxiosConfig';
 import { useContext, useState } from 'react';
 import toast from 'react-hot-toast';
 import {AuthContext} from './Context/AuthContext';

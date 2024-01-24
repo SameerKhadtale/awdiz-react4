@@ -6,7 +6,7 @@ import { AuthContext } from "./Context/AuthContext";
 
 
 function Homepage(){
-    const {state,Logout,dispatch} = useContext(AuthContext);
+    const {state,Logout} = useContext(AuthContext);
     console.log(state, "state")
 
     const router= useNavigate();
