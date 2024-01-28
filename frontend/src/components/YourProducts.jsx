@@ -26,7 +26,7 @@ const YourProducts = () => {
     async function deleteProduct(id) {
         // alert(id)
         try {
-            const response = await api.delete('/product/delete-product', { params: { id } })
+            const response = await api.delete('/product/delete-product', {id })
             if (response.data.success) {
                 getYourProduct()
                 toast.success(response.data.message)
