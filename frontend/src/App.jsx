@@ -49,7 +49,7 @@ function App() {
         <Route exact path='/effect3' element={<Effect3/>}/>
         <Route exact path='/effect4' element={<Effect4/>}/>
         <Route exact path='/params' element={<Params/>}/>
-        <Route exact path='/singleProoduct/id:' element={<SingleProduct/>}/>
+        <Route exact path='/singleProduct/:id' element={<SingleProduct/>}/>
         <Route exact path='/mapping' element={<Mapping names={["Monday", "Tuesday", "Wednesday","Thursday","Friday","Saturday","Saturday"]}/>}/>
         <Route exact path='/use-memo' element={<UseMemo/>}/>
         <Route exact path='/use-callback' element={<UseCallback/>}/>
