@@ -23,10 +23,11 @@ const YourProducts = () => {
         }
     }
 
-    async function deleteProduct(id) {
+    async function deleteProduct(productId) {
         // alert(id)
         try {
-            const response = await api.delete('/product/delete-product', {id })
+            const response = await api.delete(`/product/delete-product?id=${productId}`)
+            console.log(productId)
             if (response.data.success) {
                 getYourProduct()
                 toast.success(response.data.message)
@@ -57,6 +58,7 @@ const YourProducts = () => {
                     <h3>{pro.name}</h3>
                     <button onClick={() => router(`/update-product/${pro._id}`)}>Update ?</button>
                     <button onClick={() => deleteProduct(pro._id)}>Delete ?</button>
+                    <button onClick={()=>console.log(pro._id)}>clddk</button>
                 </div>
             ))}
         </div>

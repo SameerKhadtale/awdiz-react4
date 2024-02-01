@@ -11,8 +11,8 @@ const SingleProductNew = () => {
 
     async function getSingleProductData() {
       try {
-        const { data } = await axios.get(`https://fakestoreapi.com/products/${id}`)
-        if (data) {
+        const { data } = await axios.post(`/product//get-single-product`,{id})
+        if (data.success) {
           setProductData(data)
         }
 

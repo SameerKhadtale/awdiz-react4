@@ -68,7 +68,7 @@ function App() {
         <Route exact path= '/single-product/:id' element= {<SingleProductNew/>}/>
         <Route exact path= '/add-product' element= {<AddProduct/>}/>
         <Route exact path= '/your-products' element= {<YourProducts/>}/>
-        <Route exact path= '/update-product' element= {<UpdateProduct/>}/>
+        <Route exact path= '/update-product/:id' element= {<UpdateProduct/>}/>
     </Routes>
     </div>
   );
