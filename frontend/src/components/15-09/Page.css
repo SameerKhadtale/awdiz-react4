@@ -1,0 +1,19 @@
+#parentDiv{
+    display: flex;
+   justify-content : space-around;
+}
+
+.blackborder{
+    width: "40%";
+    border: "5px solid black";
+}
+
+.w-40{
+    /* border: "5px solid black"; */
+width : "40%";
+max-width: 250px;
+}
+
+.background{
+    background-color: aqua;
+}
