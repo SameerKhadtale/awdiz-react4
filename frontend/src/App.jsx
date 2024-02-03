@@ -32,6 +32,7 @@ import SingleProductNew from './components/1-10/SingleProductNew';
 import AddProduct from './components/04-10/AddProduct';
 import YourProducts from './components/YourProducts';
 import UpdateProduct from './components/UpdateProduct';
+import Cart from './components/Cart';
 
 function App() {
   const[loggedIn,setIsLoggedIn]=useState(false)
@@ -69,6 +70,8 @@ function App() {
         <Route exact path= '/add-product' element= {<AddProduct/>}/>
         <Route exact path= '/your-products' element= {<YourProducts/>}/>
         <Route exact path= '/update-product/:id' element= {<UpdateProduct/>}/>
+        <Route exact path= '/cart' element= {<Cart/>}/>
+
     </Routes>
     </div>
   );

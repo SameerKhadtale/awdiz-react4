@@ -1,14 +1,28 @@
-import React, { useContext,useEffect, useState } from 'react'
+import React, { AuthContext, useContext,useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import api from '../helpers/AxiosConfig';
 import toast from 'react-hot-toast';
 import './Page.css';
 
-
+async function Cart(id) {
+    if (state.user.id && id) {
+        try {
+            const response = await api.post("/user/add-cart", { userId: state.user.id, productId: id })
+            if (response.data.success) {
+                toast.success(response.data.message)
+            }
+        } catch (error) {
+            console.log(error)
+        }
+    } else {
+        toast.error("Please login to add product to cart.")
+    }
+}
+       
 const SingleProduct = () => {
     const {id} =useParams();
     // console.log(id)
-    const {state} = useContext(AuthContext)  
+    const {state} = useContext(AuthContext);
  const [productData, SetProductData] = useState({})
 
     async function getSingleProductData() {
