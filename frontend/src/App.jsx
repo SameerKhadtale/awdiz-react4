@@ -28,11 +28,12 @@ import CustomHooksLS from './components/13-10/CustomHooksLS';
 import { ClassComponent } from './components/29-09/ClassComponent';
 import PageNotFound from './components/29-09/PageNotFound';
 import Products from './components/30-09/Products';
-import SingleProductNew from './components/1-10/SingleProductNew';
+// import SingleProductNew from './components/1-10/SingleProductNew';
 import AddProduct from './components/04-10/AddProduct';
 import YourProducts from './components/YourProducts';
 import UpdateProduct from './components/UpdateProduct';
 import Cart from './components/Cart';
+import SingleProductNew from './components/1-10/SingleProductNew';
 
 function App() {
   const[loggedIn,setIsLoggedIn]=useState(false)

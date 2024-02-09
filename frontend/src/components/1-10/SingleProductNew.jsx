@@ -1,4 +1,4 @@
-import axios from 'axios';
+
 import React, { useContext, useEffect, useState } from 'react'
 import api from '../helpers/AxiosConfig';
 import { useParams } from 'react-router-dom'
@@ -10,12 +10,12 @@ import AuthContext from '../Context/AuthContext.jsx'
 const SingleProductNew = () => {
   const [productData, setProductData] = useState({});
   const { id } = useParams();
-  const {state} = useContext(AuthContext)
+ const { state } = useContext(AuthContext)
 
   async function Cart(id) {
-    if (state.user.id && id) {
+    if (state?.user?.id && id) {
         try {
-            const response = await api.post("/user/add-cart", { userId: state.user.id, productId: id })
+            const response = await api.post("/user/add-cart", { userId: state?.user?.id, productId: id })
             if (response.data.success) {
                 toast.success(response.data.message)
             }
@@ -32,7 +32,7 @@ const SingleProductNew = () => {
 
     async function getSingleProductData() {
       try {
-        const { data } = await axios.get(`/product//get-single-product?id=${id}`)
+        const { data } = await api.get(`/product/get-single-product?id=${id}`)
         if (data.success) {
           setProductData(data.product)
         }
@@ -43,7 +43,8 @@ const SingleProductNew = () => {
     } if (id) {
       getSingleProductData();
     }
-  }, [id])
+    // console.log(state)
+  }, [])
 
   console.log(productData, "productData")
 

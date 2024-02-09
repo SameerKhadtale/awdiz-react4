@@ -40,9 +40,9 @@ root.render(
       />
      
 <ParentAuthContext>
-<GlobalContext>
+{/* <GlobalContext> */}
    <App/>
-   </GlobalContext>
+   {/* </GlobalContext> */}
 </ParentAuthContext>
    
    </BrowserRouter>
